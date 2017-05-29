@@ -2,10 +2,10 @@ var mongoose = require('mongoose');
 
 var librarySchema = new mongoose.Schema({
   _id : { type: String , unique: true },
-  name: { type: String , required: true},
+  name: { type: String },
   story: { type: String },
   photo_url: { type: [String] },
-  charter: { type: Number },
+  charter: { type: Number , required: true},
   street: { type: String },
   city: { type: String },
   state: { type: String },
