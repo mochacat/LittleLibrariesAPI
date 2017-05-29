@@ -1,9 +1,11 @@
 'use strict'
 
 import request from 'supertest'
-import {should} from 'chai'
+import chai from 'chai'
 import config from '../config'
-import app from '../dist/server'
+import app from '../lib/server'
+
+const should = chai.should()
 
 const library = {
   _id: 1,
