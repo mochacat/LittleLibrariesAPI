@@ -23,6 +23,7 @@ describe('Routes test', () => {
       .expect(405)
       .end((err, res) => {
         res.status.should.equal(405)
+        res.body.error.should.equal('Method Not Allowed')
         done()
       })
   })
@@ -35,6 +36,7 @@ describe('Routes test', () => {
       .expect(405)
       .end((err, res) => {
         res.status.should.equal(405)
+        res.body.error.should.equal('Method Not Allowed')
         done()
       })
   })
@@ -47,6 +49,7 @@ describe('Routes test', () => {
       .expect(405)
       .end((err, res) => {
         res.status.should.equal(405)
+        res.body.error.should.equal('Method Not Allowed')
         done()
       })
   })
@@ -57,6 +60,7 @@ describe('Routes test', () => {
       .expect(405)
       .end((err, res) => {
         res.status.should.equal(405)
+        res.body.error.should.equal('Method Not Allowed')
         done()
       })
   })
